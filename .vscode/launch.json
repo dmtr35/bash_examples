@@ -6,7 +6,7 @@
             "request": "launch",
             "name": "Bash Debug",
             "program": "${file}",
-            "args": ["one", "two", "three"],
+            "args": ["Viva", "Dm"],
             "trace": false,
             "showDebugOutput": false,
             "terminalKind": "integrated",
