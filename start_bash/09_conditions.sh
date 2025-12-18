@@ -41,7 +41,7 @@ fi
 # Использование оператора AND для объединения двух условий проверки файлов
 echo "Hello World!" > file.txt
 
-if [ -f "file.txt" ] && [ -s "file.txt" ]; then
+if [ -f "file.txt" ] && [ -s "file.txt" ]; then                         # -s файл больше чем 0 байт; -f файл существует
     echo "2 The file exists and its size is greater than zero."
 fi
 rm file.txt
