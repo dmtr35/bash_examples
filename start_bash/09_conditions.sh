@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+
+
 FILENAME="flow_control_with_if.txt"
 
 # Условное условие для проверки существования файла.
