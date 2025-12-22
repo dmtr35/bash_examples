@@ -6,7 +6,7 @@
             "request": "launch",
             "name": "Bash Debug",
             "program": "${file}",
-            "args": ["Viva", "Dm", "47"],
+            "args": ["mysite", "nostarch.com"],
             "trace": false,
             "showDebugOutput": false,
             "terminalKind": "integrated",
