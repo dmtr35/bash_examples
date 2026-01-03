@@ -80,6 +80,26 @@ done
 arr=("${arr[@]}") && echo "${!arr[@]}"      # выравниваем индексы и выводим их на экран
 
 
+# ===========================================================================================
+# ===========================================================================================
 
+# mapfile это лучший инструмент для чтения строк в массив.
+# mapfile (он же readarray) — builtin Bash, который читает stdin построчно и кладёт строки в массив.
+# mapfile array
+
+mapfile -t screens < <(xrandr --query | awk '/ connected/{print $1}')
+# -t обрезает '\n' в конце строк
+# < <(...) — process substitution (замена процесса)
+
+# пример:
+monitor_brightness() {
+  local n="$1"
+  mapfile -t screens < <(xrandr --query | awk '/ connected/{print $1}')
+
+  for screen in "${screens[@]}"; do
+    xrandr --output "$screen" --brightness "$n"
+  done
+} 
+monitor_brightness 1
 
 exit 0
