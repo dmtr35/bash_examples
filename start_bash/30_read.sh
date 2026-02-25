@@ -56,6 +56,20 @@ FILE=/etc/passwd
 read -e -p "Enter a username > " -i $USER  user_name
 file_info=$(grep "^$user_name:" $FILE)
 
+if [ -n "$file_info" ]; then
+    IFS=":" read user pw uid gid name home shell <<< "$file_info"
+    echo "User = '$user'"
+    echo "UID = '$uid'"
+    echo "GID = '$gid'"
+    echo "Full name = '$name'"
+    echo "Home Dir. = '$home'"
+    echo "Shell = '$shell'"
+else
+    echo "No such user '$user_name'" >&2
+    exit 1
+fi
+
+
 
 
 exit 0
