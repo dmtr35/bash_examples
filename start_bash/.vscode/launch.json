@@ -8,7 +8,7 @@
             "program": "${file}",
             // "args": ["-F", "dm", "12-$", "$"],
             // "args": ["-Fdm", "22-$;3", "8;$;5"],
-            "args": ["1,3,5-7,12", "1,$"],
+            "args": ["/home/dm/test/hohoho/dfsdf"],
             // "args": ["1;3;5-7;12"],
             "trace": false,
             "showDebugOutput": false,

@@ -32,6 +32,13 @@
 # ======================================================================
 
 # for
+for i in A B C D; do echo $i; done
+# подстановка в фигурных скобках
+for i in {A..D}; do echo $i; done
+# подстановка имен файлов:
+# (если не найдет ни одного файла,вернет сам шаблон)
+for i in distros*.txt; do echo "$i"; done
+
 # for index in $(seq 1 10); do
 #     echo "${index}"
 # done
@@ -93,3 +100,19 @@ case ${IP_ADDRESS} in
 esac
 
 exit 0
+
+# case ";;&" продолжает проверку вместо простого завершения после первого найденного совпадения. 
+# case4-2: проверка символа
+
+read -n 1 -p "Type a character > "
+echo
+case "$REPLY" in
+    [[:upper:]])    echo "'$REPLY' is upper case." ;;&
+    [[:lower:]])    echo "'$REPLY' is lower case." ;;&
+    [[:alpha:]])    echo "'$REPLY' is alphabetic." ;;&
+    [[:digit:]])    echo "'$REPLY' is a digit." ;;&
+    [[:graph:]])    echo "'$REPLY' is a visible character." ;;&
+    [[:punct:]])    echo "'$REPLY' is a punctuation symbol." ;;&
+    [[:space:]])    echo "'$REPLY' is a whitespace character." ;;&
+    [[:xdigit:]])   echo "'$REPLY' is a hexadecimal digit." ;;&
+esac

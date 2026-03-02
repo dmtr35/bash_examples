@@ -1,0 +1,27 @@
+total 332
+-rw-rw-r-- 1 dm dm 7018 фев 24 17:22 01_test.sh
+-rwxrwxr-x 1 dm dm 6236 мар  2 15:33 02_string.sh
+-rw-rw-r-- 1 dm dm 1421 дек 25 17:42 03_arithmetic.sh
+-rw-rw-r-- 1 dm dm 5969 мар  2 16:06 04_arrey.sh
+-rw-rw-r-- 1 dm dm 2253 мар  2 16:12 04_associative_arrays.sh
+-rw-rw-r-- 1 dm dm 4897 фев 19 17:09 05_printf.sh
+-rw-rw-r-- 1 dm dm 1662 янв 16 16:44 06_2{curly_braces}.sh
+-rwxrwxr-x 1 dm dm 9394 мар  2 15:07 06_((_EXPRESSION_)).sh
+-rwxrwxr-x 1 dm dm 6539 фев 24 17:17 07_1_regex.sh
+-rw-rw-r-- 1 dm dm 3475 янв  7 19:01 07_2_globbing.sh
+-rw-rw-r-- 1 dm dm 1661 мар  1 17:10 08_argument.sh
+-rw-rw-r-- 1 dm dm 2453 дек 20 16:23 09_conditions.sh
+-rw-rw-r-- 1 dm dm  762 дек 16 17:24 10_functions.sh
+-rw-rw-r-- 1 dm dm 4963 янв 16 15:20 11_std_in_out_err.sh
+-rw-rw-r-- 1 dm dm 2186 мар  2 17:21 12_others.sh
+-rw-rw-r-- 1 dm dm 3097 мар  1 16:06 22_loops.sh
+-rw-rw-r-- 1 dm dm 1412 дек  9 12:52 23_positional_arguments.sh
+-rw-rw-r-- 1 dm dm  550 дек  8 16:37 24_arrays.sh
+-rw-rw-r-- 1 dm dm 1740 дек  8 17:23 25_control_operators.sh
+-rw-rw-r-- 1 dm dm  314 дек  8 16:45 26_streams.sh
+-rw-rw-r-- 1 dm dm 1833 дек  8 18:44 27_redirection_operators.sh
+-rw-rw-r-- 1 dm dm 4772 дек 13 17:31 28_test_operators.sh
+-rw-rw-r-- 1 dm dm 3846 мар  2 17:06 30_read.sh
+-rw-rw-r-- 1 dm dm    0 мар  2 17:21 output.txt
+-rwxrwxr-x 1 dm dm 1000 мар  2 16:57 test_array-2.sh
+Listing of foo.txt

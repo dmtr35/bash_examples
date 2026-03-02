@@ -1,6 +1,12 @@
 #!/bin/bash
+# Ассоциативные массивы
 
 # обьявление
+declare -A colors
+colors["red"]="#ff0000"
+colors["green"]="#00ff00"
+colors["blue"]="#0000ff"
+
 declare -A user
 
 # заполнение
